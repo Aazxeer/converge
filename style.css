@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'Mewatonia'; 
+    src: url('MEWATONIA.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 3s; 
+  }
+
+
+
+body {
+    
+    margin: 0;
+    font-family: 'Mewatonia';
+    background-color: #9229e2;
+    
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjusts text for smaller screens */
+    }
+    .content-box {
+padding: 10px;
+font-size: 10px;
+color: #000000;
+
+    }
+
+
+
+
+
+
+}
+
+
+header {
+    padding: 10px;
+    background-color: rgb(0, 119, 216);
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;   
+   
+    height: 100px;
+    width: 100%;
+ }
+ 
+ footer {
+    background-color: rgb(0, 0, 0); 
+  
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px;
+    color: #ffffff; 
+    font-size: 20px; 
+    text-align: center; 
+    box-shadow: 6px -12px 10px rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
+}
+
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; 
+    margin: 0 5px; 
+    transition: color 0.3s; 
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+
+
+
+
+.khondria {
+font-family: mewatonia;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-left: 10px;
+margin-right: 30%;
+text-shadow: 0px 3px 12px rgb(255, 255, 255);
+}
+
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; 
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.home a {
+    background-color: white; 
+    color: black; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    
+}
+
+.about a {
+    background-color: white; 
+    color: black; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+     
+}
+
+.progress a {
+    background-color: white; 
+    color: black; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+     
+}
+
+
+
+
+
+.LEARN {
+    font-size: 20px;
+    
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    height: 100px;
+    width: 170px; 
+    font-family: mewatonia;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.LEARN:hover {
+    background-color: white; 
+    color: black; 
+}
+   
+.LEARN2 {
+    font-size: 20px;
+    
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    height: 100px;
+    width: 170px; 
+    font-family: mewatonia;
+    transition: background-color 0.3s, color 0.3s;
+}
+.background {
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url('remolino.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+.background h1 {
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255),
+    6px 6px 100px rgb(255, 255, 255);
+    
+   
+    
+
+
+
+}
+
+.css {
+
+    color: rgb(255, 255, 255);
+    
+    font-size: 100px;
+    font-family: mewatonia;
+    font-weight: bold; 
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: appear 1s ease forwards,  whiteShadow 2s ease forwards;
+    
+  animation-delay: 1s;
+  opacity: 0;
+  z-index: 5;
+}
+
+@media (max-width: 700px) {
+    .css {
+        color: rgb(255, 0, 0);
+    
+        font-size: 100px;
+        font-family: mewatonia;
+        font-weight: bold; 
+        text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 40%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        text-align: center;
+      z-index: 5;
+     
+    }
+
+    .LEARN {
+        font-size: 20px;
+        
+        margin-right: 20px;
+        background-color: rgba(255, 0, 0, 0);
+        border: 2px solid white;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        height: 100px;
+        width: 170px;
+        margin-right: 100px; 
+        font-family: mewatonia;
+        transition: background-color 0.3s, color 0.3s;
+    }
+header {
+padding: 37px;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 150px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+nav ul li a:hover, 
+.home a, 
+.about a, 
+.progress a {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+  
+
+.content-box {
+    padding: 100px;
+    font-size: 10px;
+    height: 370px;
+    width: 100px;
+   
+}
+.content-box h1 {
+
+    font-size: 30px;
+}
+
+.content-box p {
+
+    font-size: 17px;
+}
+
+.black-container .learn-text {
+
+    font-size: 37px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+.black-container {
+    height: 270px; 
+    background-color: rgb(0, 119, 216); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+   border:  rgb(1, 94, 169) solid 7px;
+    
+    
+}
+
+.learn-text {
+    color: white; 
+    font-size: 60px; 
+    text-shadow: 0px 3px 12px rgb(255, 255, 255);
+    
+    
+}
+
+.learn-now-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255); 
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    font-size: 20px;
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, padding 0.3s; 
+    margin-top: 10px;
+    font-family: 'Mewatonia';
+    
+}
+
+.learn-now-button:hover {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    border-color: white; 
+    padding: 15px 25px;
+
+}
+
+
+
+
+.background2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Separate the blurred background */
+.background2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('remolino.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Content Box */
+.content-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    font-size: 27px;
+    z-index: 1; /* Ensures text is above the blurred background */
+}
+
+
+
+
+
+.background3 {
+    position: relative; 
+    width: 100%; 
+    min-height: 100vh; 
+    background-image: url('background3.jpg');
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0); 
+    left: 0; 
+    max-width: 100%;
+    margin: 0; 
+    padding: 10px;
+    color: #ffffff; 
+    font-size: 20px; 
+    text-align: center; 
+    box-shadow: 6px -12px 10px rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    z-index: 1; 
+    position: relative;
+    bottom: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bababa; 
+}
+
+::-webkit-scrollbar-track {
+    background: #6f6f6f;  
+}
+
+
+
+
+
+/*animation*/
+
+    @keyframes appear {
+        to {
+          opacity: 1;
+         
+        }
+      }
+
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      @keyframes whiteShadow {
+        0% {
+            text-shadow:none;
+        }
+        25% {
+            text-shadow:none;
+        }
+        50% {
+            text-shadow:none;
+        }
+        75% {
+            text-shadow: 40px -40px 15px rgba(255, 255, 255, 0.7),
+                         -40px 40px 15px rgba(255, 255, 255, 0.5);
+                         font-size: 110px;
+        }
+
+        80% {
+            text-shadow: 30px -30px 15px rgba(255, 255, 255, 0.7),
+                         -30px 30px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        85% {
+            text-shadow: 20px -20px 15px rgba(255, 255, 255, 0.7),
+                         -20px 20px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        90% {
+            text-shadow: 10px -10px 15px rgba(255, 255, 255, 0.7),
+                         -10px 10px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        95% {
+            text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7),
+                         0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+    
+        100% {
+            text-shadow: 
+            0px 0px 10px rgb(255, 255, 255),  
+            6px 6px 100px rgb(255, 255, 255), 
+            -1px -1px 0 black, 1px -1px 0 black, 
+            -1px 1px 0 black, 1px 1px 0 black;
+        }
+    }
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
